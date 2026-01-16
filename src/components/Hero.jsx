@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import profileImage from "../assets/myphoto.jpg"
 
 export default function Hero() {
   return (
@@ -85,7 +86,7 @@ export default function Hero() {
           <div className="w-64 h-64 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-cyan-400 p-[3px] shadow-lg animate-glow flex items-center justify-center">
             <div className="w-[15.5rem] h-[15.5rem] rounded-full overflow-hidden bg-white dark:bg-gray-900 flex items-center justify-center">
               <img
-                src="/src/assets/myphoto.jpg"
+                src={profileImage}
                 alt="Logo"
                 className="w-full h-full object-cover rounded-full"
               />
