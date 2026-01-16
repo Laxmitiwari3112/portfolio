@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ----------------------------
+   💠 Tailwind v4 Inline Theme
+----------------------------- */
+@theme {
+  --color-primary-50: #eef2ff;
+  --color-primary-500: #6366f1;
+}
+
+/* ----------------------------
+   🎨 Custom Styles & Effects
+----------------------------- */
+
+/* Subtle background gradient */
+.body-bg {
+  background-image: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.03),
+    transparent 40%
+  );
+}
+
+/* Glass effect utility */
+:root {
+  --glass: rgba(228, 176, 176, 0.918);
+}
+.glass {
+  background-color: var(--glass);
+  backdrop-filter: blur(10px);
+}
+
+/* 🔥 Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.25s ease-out; }
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(99, 102, 241, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(236, 72, 153, 0.8); }
+}
+.animate-glow { animation: glow 2s ease-in-out infinite; }
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s linear infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.4),
+                0 0 20px rgba(168, 85, 247, 0.4),
+                0 0 30px rgba(34, 211, 238, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.6),
+                0 0 30px rgba(168, 85, 247, 0.5),
+                0 0 40px rgba(34, 211, 238, 0.4);
+  }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ----------------------------
+   🌐 Navbar Active Link Styles
+----------------------------- */
+.nav-active {
+  color: var(--color-primary-500); /* highlight text */
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-active span {
+  width: 100% !important; /* force underline full width */
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.25s ease-out;
+}
