@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import profileImage from "../assets/myphoto.jpg"
+import profileImage from "../assets/myphoto.jpg";
 
 export default function Hero() {
   return (
