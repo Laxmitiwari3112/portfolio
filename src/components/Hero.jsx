@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import profileImage from "../assets/myphoto.jpg";
+import resumePDF from "../assets/LaxmiTiwariResume1.pdf";
 
 export default function Hero() {
   return (
@@ -48,6 +49,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="mailto:laxmitiwari9651@gmail.com"
+              target="_self"
               className="px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 text-white rounded-full shadow-md hover:scale-105 transition-transform duration-300"
             >
               📧 Email Me
@@ -72,7 +74,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/src/assets/LaxmiTiwariResume1.pdf"
+              href={resumePDF}
               download
               className="px-6 py-3 border-2 border-purple-500 rounded-full hover:bg-purple-50 dark:hover:bg-gray-800 transition"
             >
