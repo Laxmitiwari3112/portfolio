@@ -1,13 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaBookOpen, FaLink, FaGlobe } from "react-icons/fa";
+import blogifyImage from "../assets/blogify.png"
+
 
 const projects = [
   {
     title: "Blogify",
     desc: "A full-stack collaborative blogging platform built with Node.js, Express, and MongoDB. Users can create posts, comment, and engage through an intuitive UI. Features secure routing, REST APIs, and a scalable backend architecture.",
     link: "https://github.com/Laxmitiwari3112/BLOGIFY",
-    image: "/src/assets/blogify.png",
+    image: {blogifyImage},
     icon: <FaBookOpen className="text-pink-500 text-3xl" />,
   },
   {
