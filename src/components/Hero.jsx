@@ -48,9 +48,8 @@ export default function Hero() {
           {/* CTA buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=laxmitiwari9651@gmail.com&su=Contact%20From%20Portfolio&body=Hello%20Laxmi,"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:laxmitiwari9651@gmail.com?subject=Contact%20From%20Portfolio&body=Hello%20Laxmi,"
+              target=""
               className="px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 text-white rounded-full shadow-md hover:scale-105 transition-transform duration-300"
             >
               📧 Email Me
