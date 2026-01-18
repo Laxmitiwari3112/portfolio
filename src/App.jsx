@@ -9,9 +9,9 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans bg-gray-950 text-gray-100 relative overflow-hidden scroll-smooth">
+    <div className="min-h-screen font-sans text-gray-800 bg-white dark:bg-gray-950 dark:text-gray-100 relative overflow-hidden scroll-smooth">
       {/* 🌌 Subtle animated gradient background */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br  from-gray-900 via-gray-950 to-black animate-gradient-slow"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-pink-100 via-white to-cyan-100 dark:from-gray-900 dark:via-gray-950 dark:to-black animate-gradient-slow"></div>
 
       {/* ✨ Floating gradient orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-pink-400/20 dark:bg-pink-500/10 rounded-full blur-3xl animate-float-slow"></div>
